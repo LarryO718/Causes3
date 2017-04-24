@@ -9,28 +9,19 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	
 </head>
-<body>
 <header>
 
 	
-		<!--<nav>
-			
-	     
-			<a href="index.html">HOME</a>
-			<a href="about.html">ABOUT</a>
-			<a href="contact.html">CONTACT</a>
+	</header>
 	
 
-	
-	     	</nav> -->
-	</header>
-	<!DOCTYPE html>
-<html>
 <head>
 	<title>Contact Form</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
 </head>
 <body>
+
 
 	<nav class="navbar navbar-default">
 		<div class="navbar-header">
@@ -42,17 +33,46 @@
     	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav nav-pills navbar-right">
 	  			<li role="presentation"><a href="index.html">Home</a></li>
-				<li role="presentation"><a href="Involved.html">Get Invovled</a></li>
+				<!--<li role="presentation"><a href="Involved.html">Get Invovled</a></li> -->
 				<!--<li role="presentation"><a href="#">Messages</a></li> -->
 			</ul>
 		</div>
 	</nav>
 
-<h2></h2>
+		<script type="text/javascript">
+	function submit_by_tag(){
+			 var fname = document.getElementById("fname").value;
+			 var lname = document.getElementById("lname").value;
+			 var bday = document.getElementById("bday").value;
+			 var email = document.getElementById("email").value;
+			 var gender = document.getElementById("gender").value;
+			  	{
+			 var x = document.getElementsByTagName("form");
+			    x[0].submit();
+			   	alert( First Name : " + fname + " Last Name : \n " + lname + " Birthday : \n " + bday + " Email \n " + email + " Gender \n " + gender + ");
+			}
+		}
 
-<!-- Is a comment -->
-<div class= "form">
-<form>
+			function validation(){
+				var name = document.getElementById("name").value;
+				var email = document.getElementById("email").value;
+				var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+				if (name === '' || email === '') {
+					alert("Please fill all fields...!!!!!!");
+					return false;
+				} else if (!(email).match(emailReg)) {
+					alert("Invalid Email...!!!!!!");
+					return false;
+				} else {
+					return true;
+				}
+			}
+
+	</script>
+
+<div class="container">
+	<div class="main">
+<form action="#" method="post">
 	<label> First Name<br>
 		<input type="text" name="fname" placeholder="Bruce" required>
 	</label>
@@ -61,16 +81,8 @@
 		<input type="text" name="lname" placeholder="Wayne">
 	</label>
 	<br>
-	<label>Password<br>
-		<input type="password" name="pswd" placeholder="password">
-	</label>
-	<br>
 	<label>Birthday<br>
 		<input type="date" name="bday" required>
-	</label>
-	<br>
-	<label>Profile Pic<br>
-		<input type="file" name="pic">
 	</label>
 	<br>
 	<label>Email<br>
@@ -81,35 +93,21 @@
 	<label>
 		<input type="radio" name="gender" value="m"> Male
 	</label>
-	<p></p>
+	<p>some stuff</p>
 	<label>
 		<input type="radio" name="gender" value="f"> Female
 	</label>
 	<br>
+	<!--<input type="button" name="submit_tag" id="btn_tag" value="Register" onclick="submit_by_tag()" /> -->
+	<button onclick="submit_by_tag()">Submit</button>
 	
-	<label>Message
-		<textarea name="info" placeholder="my info"></textarea>
-	</label>
-	<br>
-	<input type="submit" name="submit" value="Register">
-	<br>
-	<input type="reset" name="reset this form" value="Oops Restart">
-
-
-
 </form>
-</div>
-
-<footer id="foot">
-	&copy; &trade; &amp; copywrite &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  company 2016. All rights reserved.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</footer>
-<h1>Below Footer</h1>
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!--<script src="js/submit_javascript.js"></script> -->
 
 </body>
 </html>
-</body>
+<body>
 <footer>Back On My Feet</footer>
-</html>
+</body>

@@ -1,7 +1,7 @@
 *{
 	font-family:'helvetica';
 	color:#bb0a21;
-	box-sizing: border-box;
+	
 	/* this is a comment */
 }
 body{
@@ -19,14 +19,18 @@ body{
 	;
 }
 
-.col-sm-12{
-	border: 1px solid red;
-	/*border-style: solid;*/
-	/*border-color: black;*/
-	background-color: black;
+.row {
+	
+	border-style: solid;
+	border-color: black;
 	width:auto;
-	height:auto;
-	margin: 0px 10px 0px 10px;
+	height: auto;
+	padding: 10px;
+	border: 1px solid red;
+	float: left;
+	background-color: black;
+	
+
 }
 
 .text{
@@ -35,18 +39,21 @@ body{
 	background-color: blue;
 }
 
-.row{
+/*.row{
 	padding: 10px;
 	margin: 10px;
 	background-color: blue;
 	text-align: absolute;
 	position: relative;
 }
+*/
 p {
 	font-size: 50%;
 	border-width: thin;
 	border-style: solid;
 	border-color: black;
+	/*display: flex;*/
+	/*align-content:stretch;*/
 
 }
 .img{
@@ -55,15 +62,9 @@ p {
 	clear: right;
 }
 
-.col-lg-4 colc{
-    padding: 10px;
-	margin: 1px;
-	float: left;
-	clear: right;
-	position: relative;
-}
 
-.form{
+
+.col-lg-12 colf{
 	position: relative;
 	border-width: thin;
 	border-style: solid;
@@ -71,7 +72,7 @@ p {
 	text-align: center;
 }
 
-	.tnavbar-brand{
+	.navbar-brand{
     text-decoration: none;
 	margin: 10px;
 	padding: 10px 20px;
@@ -83,7 +84,7 @@ p {
 	border: 2px solid #fff;
 	}
 
-.presentation{
+/*.presentation{
 	text-decoration: none;
 	margin: 10px;
 	padding: 10px 20px;
@@ -94,6 +95,8 @@ p {
 	border-radius: 50px;
 	border: 2px solid #fff;
 	}
+	*/
+
 	a {
 		text-decoration: none;
 	    margin: 10px;
@@ -106,8 +109,20 @@ p {
 	    border: 2px solid #fff;
 	}
 
+
 	p {
 		color:black;
 		font-weight: bold;
 	}
+	
+
+	.col-sm-12 img{
+		max-width: 100%;
+		width:auto;
+	    height: auto;
+	    padding: 10px;
+	    border: 1px solid red;
+	}
 }
+
+	
